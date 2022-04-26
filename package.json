@@ -1,0 +1,21 @@
+{
+  "name": "almark-deploy-cli",
+  "version": "1.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node app.js"
+  },
+  "keywords": [],
+  "author": "almark",
+  "license": "ISC",
+  "workspaces":{
+    "packages/*",
+    "example"
+  },
+  "dependencies": {
+    "enquirer": "^2.3.6",
+    "express": "^4.17.3",
+    "oclif": "^3.0.1"
+  }
+}
