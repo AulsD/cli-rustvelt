@@ -15,7 +15,7 @@ class Raftel extends Base {
     // flag with a value (-n, --name=VALUE)
     name: flags.string({
       char: "n",
-      description: "name to print"
+      description: "This command describe what will be the name of your init project"
     }),
     // flag with no value (-f, --force)
     force: flags.boolean({ char: "f" })
@@ -45,7 +45,7 @@ class Raftel extends Base {
       }
     }
     const name = flags.name;
-
+   // const typeProject = flags.types;
     const vars = { projectName: name };
     const inDir = path.resolve(__dirname, "../templates/ruStvelte");
     const outDir = path.join(process.cwd(), name);
